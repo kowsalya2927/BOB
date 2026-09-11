@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e6f4ff;
+    padding: 30px;
+    margin: 0;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background:  #ffe6ef;
+    padding: 30px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 7px auto;
+    border: 1px solid #333;
+    border-radius: 7px;
+}
+button {
+    width: 25%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #6abf69;
+    color: #333;
+    cursor: pointer;
+} 
+.delete-button {
+    width: 25%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e57373;
+    color: #333;
+    cursor: pointer;
+}
+#studentData {
+    margin-top: 25px;
+}
+.student-card {
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff7fa;
+}
+.student-card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.student-card p {
+    margin: 4px 5px;
+    color: #333;
+}
