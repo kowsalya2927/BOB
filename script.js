@@ -15,17 +15,13 @@ function addStudent() {
         marks: marks,
         city: city
     };
-    var jsonData = JSON.stringify(student);
-    var studentDetails = JSON.parse(jsonData);
+    var jsonData = JSON.stringify(student, null, 2);
     var card = document.createElement("div");
     card.className = "student-card";
-    card.innerHTML =
-        "<h2>" + studentDetails.name + "</h2>" +
-        "<p>Age: " + studentDetails.age + "</p>" +
-        "<p>Department: " + studentDetails.department + "</p>" +
-        "<p>Marks: " + studentDetails.marks + "</p>" +
-        "<p>City: " + studentDetails.city + "</p>" +
-        "<button class='delete-button' onclick='deleteStudent(this)'>Delete</button>";
+    card.innerHTML= `
+       <pre>${jsonData}</pre>
+       <button class='delete-button' onclick='deleteStudent(this)'>Delete</button>
+    `;
     document.getElementById("studentData").appendChild(card);
     document.getElementById("name").value = "";
     document.getElementById("age").value = "";
@@ -34,5 +30,5 @@ function addStudent() {
     document.getElementById("city").value = "";
 }
 function deleteStudent(button) {
-        button.parentElement.remove();
+    button.parentElement.remove();
 }
