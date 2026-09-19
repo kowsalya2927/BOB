@@ -16,6 +16,7 @@ function addStudent() {
         city: city
     };
     var jsonData = JSON.stringify(student, null, 2);
+    var studentObject = JSON.parse(jsonData);
     var card = document.createElement("div");
     card.className = "student-card";
     card.innerHTML= `
